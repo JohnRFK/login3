@@ -42,7 +42,7 @@ public class ApplicationConfig {
     @Bean
     public UserDetailsService userDetailsService() {
         // TODO Auto-generated method stub
-        return username -> userRepository.findbyUsername(username)
+        return username -> userRepository.findByUsername(username)
         .orElseThrow(() -> new UsernameNotFoundException("user not found"));
     }
 }

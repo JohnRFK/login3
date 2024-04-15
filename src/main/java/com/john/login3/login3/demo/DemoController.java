@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 @RequiredArgsConstructor
 public class DemoController {
     @PostMapping(value = "demo")
-    public String welcome(@RequestBody String entity) {
+    public String welcome() {
         //TODO: process POST request
         
         return "welcome from secure webpoint";
