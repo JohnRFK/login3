@@ -8,13 +8,14 @@ import java.util.function.Function;
 import javax.crypto.SecretKey;
 
 import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.stereotype.Service;
 
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.io.Decoders;
 import io.jsonwebtoken.security.Keys;
 
-
+@Service
 public class JwtService {
     private static final int EXP_ONE_DAY = 1000 * 60 * 24;
     private final String SECRET_KEY = "808e02d95ff938fccc4729d94231f3ba31d12f4436fb41152e";
